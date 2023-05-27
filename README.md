@@ -8,6 +8,7 @@
 During the course of the project,a few challenges were faced.Some of the challenges and used methods to tackle them are listed below:-
 * **Correlated targets :** 
   * First challenge was to figure out way to do multitarget prediction as we had to predict DNI irradiance, DHI irradiance and GHI irradiance all while them being affecting each other.So naive method of handling it was just to predict them separately usng rest of data i n trainig but this had poor performance.Then I came up with a very effective method in which one predicted target was included in train data of other target.
+  * This idea was based on imputation techniques in which we first impute missing data points and predict target only after that.
   * Using non target attributes in training, Clearsky DHI was predicted.Then Using non-target+DHI as train data ,GHI was trained ,then using all rest DNI was trained.After all this we have poorly predicted data of all targets.Then DHI was trained using non-targets+GHI+DNI and similarly for others.
   * Above steps were recursively applied few times.This technique effectively used correlation among targets to predict each other.
   * This way a number of models with it's train data schema not necessarily same as others was built
