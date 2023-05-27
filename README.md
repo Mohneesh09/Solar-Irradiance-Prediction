@@ -6,6 +6,7 @@ This challenge attempts to predict solar irradiance components which will help s
 
  # Challenges along the way
 During the course of the project,a few challenges were faced.Some of the challenges are listed below:-
-* **Correlated targets :** First challenge was to figure out way to do multitarget prediction as we had to predict DNI irradiance, DHI irradiance and GHI irradiance all while them being affecting each other.So naive method was just to predict them separately but this had poor performance.Then I came up with a very effective method in which one predicted target was included in train data of other target.
-* * hh
+* **Correlated targets :** 
+  * First challenge was to figure out way to do multitarget prediction as we had to predict DNI irradiance, DHI irradiance and GHI irradiance all while them being affecting each other.So naive method was just to predict them separately but this had poor performance.Then I came up with a very effective method in which one predicted target was included in train data of other target.
+* hh
 * 
