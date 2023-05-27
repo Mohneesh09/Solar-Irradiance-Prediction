@@ -14,7 +14,7 @@ During the course of the project,a few challenges were faced.Some of the challen
 * One hideous challenge along the way was modularizing training and predicting pipeline.Doing this was crucial to train on so many different train data variants corresponding to each target. 
 * Hyperparameter optimization: Xgboost being the sota for tabular data had responsibilty to perform well on the data.So I finetuned all it's parameters using *Optuna*.
 * **Stacking:**
- * Different models were used to ensure that one model does not ovefit.Models used were Xgboost,Linear Regression and Random forest.Individual models were trained on differnet traindata variants.So all these models were merged using a linearRegression metamodel which does the final prediction.
+  Different models were used to ensure that one model does not ovefit.Models used were Xgboost,Linear Regression and Random         forest.Individual models were trained on differnet traindata variants.So all these models were merged using a linearRegression metamodel which does the final prediction.
 
 ### TechStacks
 Python,Machine Learning, NumPy, Pandas, Sklearn, Optuna
