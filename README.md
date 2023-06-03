@@ -1,4 +1,4 @@
-# solar-irradiance-prediction
+# Solar-irradiance-prediction
 **Task:** optimize solar power production by building a model which accurately predicts irradiance using some data.
 # Problem It Solves
 * After witnessing harmful effect of fossil fuels on our enviornment and realising it's exhaustability we are trying to make advancement in renewble clean energy sources.Solar energy energy being one of them is harnessed using solar plates whose orientation along with weather conditions determine how much electricity will be generated.
